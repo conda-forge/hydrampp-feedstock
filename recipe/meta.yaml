@@ -1,5 +1,5 @@
 {% set name = "hydrampp" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/raw-lab/HydraMPP/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 17a28e49ccea5cc13e1c1cce944851f7e3516a163af46716b4efb35ba23a1cd1
+  sha256: 04dc702b1282a04718764cf9ba9068fa9585857a58e3ec894a37d72176501b09
 
 build:
   noarch: python
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=3.6
+    - setuptools
     - pip
   run:
     - python >=3.6
